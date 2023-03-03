@@ -107,10 +107,11 @@ btnPlus.addEventListener("click", () => {
 })
 
 btnMinus.addEventListener("click", () => {
-  if (minutes >= 5)
+  if (minutes >= 5) {
     btnPlay.classList.remove('hide');
-  btnPause.classList.add('hide')
-  minusTime()
+    btnPause.classList.add('hide')
+    minusTime()
+  }
 
 })
 
